@@ -1,6 +1,7 @@
 package com.company.yatsenko;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Frame {
     private boolean strike = false;
@@ -49,22 +50,6 @@ public class Frame {
     }
 
 
-//    public void createFrame(String[] text){
-//        if(text[0].equals("X")){
-//            new Frame().setStrike(true).setSpare(false).setPoints(10);
-//        }
-//        if(text[0].equals("-")){
-//            new Frame().setStrike(false).setSpare(false).setPoints(Integer.parseInt(text[1]));
-//        }
-//        if(text[1].equals("-")){
-//            new Frame().setStrike(false).setSpare(false).setPoints(Integer.parseInt(text[0]));
-//        }
-//        if(text[1].equals("/")){
-//            new Frame().setStrike(false).setSpare(true).setPoints(Integer.parseInt(text[0]));
-//        }
-//    }
-
-
     @Override
     public String toString() {
         return "Frame->(" +
@@ -91,6 +76,7 @@ public class Frame {
     public int getSecondThrow() {
         return secondThrow;
     }
+
 
 
 }
